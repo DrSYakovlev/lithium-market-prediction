@@ -23,7 +23,6 @@ from sklearn.metrics import classification_report, confusion_matrix
 import panel as pn
 import hvplot.pandas
 
-
 # Settings / other
 import warnings
 from datetime import date, timedelta
@@ -46,7 +45,6 @@ end_date = last_sunday.strftime("%Y-%m-%d")
 price_df = get_weekly_data(tickers, start_date, end_date)
 # Calculate weekly returns for each ticker
 returns_df = price_df.pct_change().dropna()
-
 
 # Create lithium sentiment index
 # Simple average across all 3 tickers.

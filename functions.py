@@ -95,7 +95,7 @@ def create_page_2():
             [yfinance](https://pypi.org/project/yfinance/)
             (calculated lithium index)
             - Features engineered using technical analysis
-            - Library of influential hystorical events (Li-battery-specific)
+            - Library of influential historical events (Li-battery-specific)
         """,
         sizing_mode="stretch_width")
 
@@ -105,7 +105,7 @@ def create_page_2():
             "MVP - dashboard showing model applicability",
             sizing_mode="stretch_width"),
         pn.pane.Markdown(
-            "[Project repo](https://github.com/DrSYakovlev/lithium)"),
+            "[Project repo](https://github.com/DrSYakovlev/lithium-market-prediction)"),
         info_card,
         disclaimer,
         align="center")
