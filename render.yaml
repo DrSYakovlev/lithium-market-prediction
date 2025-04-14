@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: lithium-dashboard
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: panel serve app.py --address 0.0.0.0 --port 10000 --allow-websocket-origin=*
+    plan: free
